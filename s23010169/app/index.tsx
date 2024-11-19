@@ -13,7 +13,7 @@ const WelcomeScreen = () => {
         style={styles.image}
       />
       <Text style={styles.title}>Hello</Text>
-      <Text style={styles.subtitle}>Welcome to the App huhudhhd dwdjnwjddnwjnd</Text>
+      <Text style={styles.subtitle}>Welcome to the Volunteer & Charity App!</Text>
 
       {/* Navigate to Dashboard on Login button press */}
       <TouchableOpacity

@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'reac
 import { useRouter } from 'expo-router';
 
 const LoginScreen = () => {
-  const router = useRouter(); // Initialize the router
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
@@ -15,16 +15,16 @@ const LoginScreen = () => {
         />
       </View>
 
-      {/* Title */}
+      
       <Text style={styles.title}>Login</Text>
 
-      {/* Input Fields */}
+      
       <View style={styles.inputContainer}>
         <TextInput style={styles.input} placeholder="Email" keyboardType="email-address" />
         <TextInput style={styles.input} placeholder="Password" secureTextEntry />
       </View>
 
-      {/* Forgot Password Button */}
+      
       <TouchableOpacity
         onPress={() => router.push('/ForgotPassword')}
         style={styles.forgotPasswordButton}
@@ -32,12 +32,12 @@ const LoginScreen = () => {
         <Text style={styles.forgotPasswordText}>Forgot your password?</Text>
       </TouchableOpacity>
 
-      {/* Login Button */}
+      
       <TouchableOpacity style={styles.button} onPress={() => router.push('/Dashboard')}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
 
-      {/* Sign-up Link */}
+      
       <Text style={styles.footerText}>
         Don't have an account?{' '}
         <TouchableOpacity onPress={() => router.push('/Signup')}>
