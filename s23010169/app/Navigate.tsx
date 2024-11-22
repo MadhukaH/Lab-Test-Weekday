@@ -1,10 +1,9 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { Link } from 'expo-router';
 
 const Navigate = () => {
   return (
     <View>
-      <Text>index</Text>
       <Link href={'/Signup'}>Signup</Link>
       <Link href={'/Login'}>Login</Link>
       <Link href={'/Dashboard'}>Dashboard</Link>

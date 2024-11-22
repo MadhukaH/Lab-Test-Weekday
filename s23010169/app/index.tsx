@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
-import { AntDesign, FontAwesome } from '@expo/vector-icons'; // Import required icons
-import { useRouter } from 'expo-router'; // Import the useRouter hook for programmatic navigation
+import { AntDesign, FontAwesome } from '@expo/vector-icons'; 
+import { useRouter } from 'expo-router'; 
 
 const WelcomeScreen = () => {
-  const router = useRouter(); // Get the router instance
+  const router = useRouter(); 
 
   return (
     <View style={styles.container}>
@@ -18,7 +18,7 @@ const WelcomeScreen = () => {
       {/* Navigate to Dashboard on Login button press */}
       <TouchableOpacity
         style={[styles.button, styles.loginButton]}
-        onPress={() => router.push('/Login')} // Navigates to the Login page
+        onPress={() => router.push('/Login')}
       >
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
@@ -26,7 +26,7 @@ const WelcomeScreen = () => {
       {/* Navigate to Signup on Sign Up button press */}
       <TouchableOpacity
         style={[styles.button, styles.signUpButton]}
-        onPress={() => router.push('/Signup')} // Navigates to the Signup page
+        onPress={() => router.push('/Signup')}
       >
         <Text style={styles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
@@ -35,13 +35,13 @@ const WelcomeScreen = () => {
       <View style={styles.iconsContainer}>
         {/* Navigate to Signup on Icon press */}
         <TouchableOpacity onPress={() => router.push('/Signup')}>
-          <AntDesign name="google" size={40} color="#EA4335" style={styles.icon} /> {/* Google Icon */}
+          <AntDesign name="google" size={40} color="#EA4335" style={styles.icon} />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => router.push('/Signup')}>
-          <AntDesign name="instagram" size={40} color="#4B0082" style={styles.icon} /> {/* Instagram Icon */}
+          <AntDesign name="instagram" size={40} color="#4B0082" style={styles.icon} /> 
         </TouchableOpacity>
         <TouchableOpacity onPress={() => router.push('/Signup')}>
-          <FontAwesome name="facebook" size={40} color="#1877F2" style={styles.icon} /> {/* Facebook Icon */}
+          <FontAwesome name="facebook" size={40} color="#1877F2" style={styles.icon} />
         </TouchableOpacity>
       </View>
     </View>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     alignItems: 'center',
     marginVertical: 10,
-    elevation: 5, // Adds shadow on Android
+    elevation: 5, //shadow on Android
     shadowOpacity: 0.2,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 5,

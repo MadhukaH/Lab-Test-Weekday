@@ -47,7 +47,9 @@ const HomeScreen = () => {
         <Text style={styles.trendingText}>Need Medical</Text>
       </View>
 
-      
+
+
+      {/* Categories Section */}
       <View style={styles.categories}>
         <TouchableOpacity
           style={styles.categoryItem}
@@ -78,7 +80,7 @@ const HomeScreen = () => {
         </TouchableOpacity>
       </View>
 
-      
+      {/* Charity Section */}
       <View style={styles.charitySection}>
         <Image
           source={{
@@ -89,7 +91,7 @@ const HomeScreen = () => {
         <Text style={styles.charityText}>Charity Day ❤️</Text>
       </View>
 
-      
+      {/* Bottom Navigation */}
       <View style={styles.bottomNav}>
         <TouchableOpacity onPress={() => handleIconPress('Home')}>
           <Ionicons name="home" size={28} color="#4B0082" />

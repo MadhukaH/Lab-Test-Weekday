@@ -3,19 +3,19 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'reac
 import { useRouter } from 'expo-router';
 
 const SignUpScreen = () => {
-  const router = useRouter(); // Initialize the router
+  const router = useRouter();
 
   return (
     <View style={styles.container}>
       {/* Illustration */}
       <View style={styles.imageContainer}>
         <Image
-          source={{ uri: 'https://i.postimg.cc/0yPfLGp5/6343845-Photoroom.png' }} // Replace with your image URL or asset
+          source={{ uri: 'https://i.postimg.cc/0yPfLGp5/6343845-Photoroom.png' }}
           style={styles.image}
         />
       </View>
 
-      {/* Title */}
+      
       <Text style={styles.title}>Sign Up</Text>
 
       {/* Input Fields */}
